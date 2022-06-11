@@ -1,0 +1,78 @@
+unit calc;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls;
+
+type
+  Tcalculadora1 = class(TForm)
+    FlowButtons: TFlowPanel;
+    sevenButton: TLabel;
+    eightButton: TLabel;
+    nineButton: TLabel;
+    plusButton: TLabel;
+    fourButton: TLabel;
+    fiveButton: TLabel;
+    sixButton: TLabel;
+    multiplicationButton: TLabel;
+    oneButton: TLabel;
+    twoButton: TLabel;
+    threeButton: TLabel;
+    minusButton: TLabel;
+    clearButton: TLabel;
+    zeroButton: TLabel;
+    commaButton: TLabel;
+    equalButton: TLabel;
+    procedure multiplicationButtonMouseEnter(Sender: TObject);
+    procedure multiplicationButtonMouseLeave(Sender: TObject);
+    procedure sevenButtonMouseLeave(Sender: TObject);
+    procedure equalButtonMouseEnter(Sender: TObject);
+    procedure equalButtonMouseLeave(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  calculadora1: Tcalculadora1;
+
+implementation
+
+{$R *.dfm}
+
+
+// Troca a cor do botão, quando o mouse passa pro cima
+procedure Tcalculadora1.equalButtonMouseEnter(Sender: TObject);
+begin
+   equalButton.Color := clGrayText;
+end;
+
+procedure Tcalculadora1.multiplicationButtonMouseEnter(Sender: TObject);
+begin
+   (Sender as TLabel).Color := clScrollBar;
+end;
+
+// Volta a cor do botão original, quando o mouse sair - Operadores
+procedure Tcalculadora1.multiplicationButtonMouseLeave(Sender: TObject);
+begin
+   (Sender as TLabel).Color := cl3DLight;
+end;
+
+// Volta a cor do botão original, quando o mouse sair - Numeros
+procedure Tcalculadora1.sevenButtonMouseLeave(Sender: TObject);
+begin
+   (Sender as TLabel).Color := clWhite;
+end;
+
+// Volta a cor do botão original, quando o mouse sair - Igual
+procedure Tcalculadora1.equalButtonMouseLeave(Sender: TObject);
+begin
+   equalButton.Color := clScrollBar;
+end;
+
+end.
+
+

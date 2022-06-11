@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/05/12 13:29:10.000.551,=C:\Users\IdeaPad\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2022/05/12 13:30:17.000.189,C:\Users\IdeaPad\Documents\Embarcadero\Studio\Projects\Unit3.dfm=C:\Users\IdeaPad\Downloads\CADU\Emabacadero\Calculadora\calc.dfm</Transaction>
+    <Transaction>2022/05/12 13:30:17.000.189,C:\Users\IdeaPad\Documents\Embarcadero\Studio\Projects\Unit3.pas=C:\Users\IdeaPad\Downloads\CADU\Emabacadero\Calculadora\calc.pas</Transaction>
+    <Transaction>2022/05/12 13:30:25.000.345,C:\Users\IdeaPad\Documents\Embarcadero\Studio\Projects\Project3.dproj=C:\Users\IdeaPad\Downloads\CADU\Emabacadero\Calculadora\calculadora.dproj</Transaction>
+    <Transaction>2022/05/13 09:17:25.000.686,C:\Users\IdeaPad\Downloads\CADU\Emabacadero\Calculadora\calculadora.dproj=C:\Users\IdeaPad\Downloads\CADU\Emabacadero\Calculadora\calculadora.dproj</Transaction>
+    <Transaction>2022/06/11 10:41:17.241,C:\Users\Alunos\Downloads\Calculadora\calculadora.dproj=C:\Users\Alunos\Downloads\Calculadora\calculadora.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

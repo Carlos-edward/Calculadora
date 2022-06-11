@@ -1,0 +1,11 @@
+﻿[]
+Coordinates=76,70,82,33
+Visible=True
+
+[FlowButtons]
+Coordinates=0,0,76,51
+
+[sevenButton]
+Coordinates=95,1,46,51
+Visible=True
+

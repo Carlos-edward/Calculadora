@@ -1,0 +1,58 @@
+unit calc;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls;
+
+type
+  Tcalculadora1 = class(TForm)
+    FlowButtons: TFlowPanel;
+    sevenButton: TLabel;
+    eightButton: TLabel;
+    nineButton: TLabel;
+    plusButton: TLabel;
+    fourButton: TLabel;
+    fiveButton: TLabel;
+    sixButton: TLabel;
+    multiplicationButton: TLabel;
+    oneButton: TLabel;
+    twoButton: TLabel;
+    threeButton: TLabel;
+    minusButton: TLabel;
+    clearButton: TLabel;
+    zeroButton: TLabel;
+    commaButton: TLabel;
+    equalButton: TLabel;
+    procedure multiplicationButtonMouseEnter(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  calculadora1: Tcalculadora1;
+
+implementation
+
+{$R *.dfm}
+
+
+
+procedure Tcalculadora1.multiplicationButtonMouseEnter(Sender: TObject);
+begin
+multiplicationButton.Color := clSkyBlue;
+end;
+
+end.
+
+procedure Tcalculadora1.ButtonsClick(Sender: TObject);
+var
+  TheButton: TLabel;
+begin
+  TheButton := Sender as TButton;
+  DoTask(TheButton.Tag);
+  multiplicationButton.Color := clSkyBlue;
+end;
